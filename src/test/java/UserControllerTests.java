@@ -1,15 +1,23 @@
-import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.*;
 
-import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 public class UserControllerTests extends ApiTestBase {
     @Test
-    public void getUserInfo_checkStatusCode_expect200() {
-        UserApi.getUserInfo("a33218c3-f3c0-46c9-ae69-af23c7fb50a6")
-            .then()
+    public void getUserInfo_checkStatusCode_expect200() throws Exception {
+        String userUid = UserApi.createUser();
+        UserApi.getUserInfo(userUid)
+            .then().log().all()
                 .assertThat().statusCode(200);
+    }
+
+    @Test
+    public void getUserInfo_checkBodyHasNameAndUid() throws Exception {
+        String userUid = UserApi.createUser();
+        UserApi.getUserInfo(userUid)
+                .then().log().all()
+                .assertThat().body("$", hasKey("name"))
+                .assertThat().body("$", hasKey("uid"));
     }
 
     @Test

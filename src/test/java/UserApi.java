@@ -28,7 +28,7 @@ public class UserApi extends ApiTestBase {
         return Files.readString(path, StandardCharsets.UTF_8);
     }
 
-    public static UUID createUser() throws Exception {
+    public static String createUser() throws Exception {
         UUID newUserId = UUID.randomUUID();
         String csvTemplate = getUserCsvTemplate();
         String csvPayload = csvTemplate.replace("{{PUT_UUID_HERE}}", newUserId.toString());
@@ -48,6 +48,6 @@ public class UserApi extends ApiTestBase {
         if (!Status.SUCCESS.matches(response.statusCode())) {
             throw new Exception("User was not created");
         }
-        return newUserId;
+        return newUserId.toString();
     }
 }
