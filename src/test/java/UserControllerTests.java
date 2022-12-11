@@ -1,5 +1,9 @@
 import static org.hamcrest.Matchers.*;
+import static io.restassured.RestAssured.*;
 
+import Models.UserInfo;
+import com.google.gson.Gson;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class UserControllerTests extends ApiTestBase {
@@ -27,5 +31,13 @@ public class UserControllerTests extends ApiTestBase {
             .then()
                 .assertThat().statusCode(404)
                 .assertThat().body("message", equalTo("User with uid " + uid + " not found"));
+    }
+
+    @Test
+    public void getUserInfo_returnCorrrectUid() throws Exception {
+        String userUid = UserApi.createUser();
+        var jsonSting = UserApi.getUserInfo(userUid).getBody().asString();
+        var user = new Gson().fromJson(jsonSting, UserInfo.class);
+        Assert.assertEquals(user.uid, userUid);
     }
 }

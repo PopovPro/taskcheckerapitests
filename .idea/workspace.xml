@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2420079f-c5e9-4960-941a-a774a9a5d698" name="Changes" comment="- generate new user">
+    <list default="true" id="2420079f-c5e9-4960-941a-a774a9a5d698" name="Changes" comment="- refactor tests">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Models/UserInfo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UserControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserControllerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,19 +41,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.UserControllerTests">
-    <configuration name="QuestionControllerTests.getUserInfo_checkStatusCode_expect200" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TaskCheckerDemo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="QuestionControllerTests" />
-      <option name="METHOD_NAME" value="getUserInfo_checkStatusCode_expect200" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.UserControllerTests.getUserInfo_returnCorrrectUid_">
     <configuration name="UserControllerTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TaskCheckerDemo" />
       <option name="PACKAGE_NAME" value="" />
@@ -88,11 +77,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTests.getUserInfo_checkStatusCode_expect200" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="UserControllerTests.getUserInfo_returnCorrectUid_expect200" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="TaskCheckerDemo" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UserControllerTests" />
-      <option name="METHOD_NAME" value="getUserInfo_checkStatusCode_expect200" />
+      <option name="METHOD_NAME" value="getUserInfo_returnCorrectUid_expect200" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTests.getUserInfo_returnCorrrectUid_" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="TaskCheckerDemo" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserControllerTests" />
+      <option name="METHOD_NAME" value="getUserInfo_returnCorrrectUid_" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -102,11 +103,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.UserControllerTests.getUserInfo_returnCorrrectUid_" />
+        <item itemvalue="TestNG.UserControllerTests.getUserInfo_returnCorrectUid_expect200" />
         <item itemvalue="TestNG.UserControllerTests" />
         <item itemvalue="TestNG.UserControllerTests.getUserInfo_checkBodyHasNameAndUid" />
         <item itemvalue="TestNG.UserControllerTests.getUserInfo_checkBody_hasNameAndUid" />
-        <item itemvalue="TestNG.UserControllerTests.getUserInfo_checkStatusCode_expect200" />
-        <item itemvalue="TestNG.QuestionControllerTests.getUserInfo_checkStatusCode_expect200" />
       </list>
     </recent_temporary>
   </component>
@@ -133,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670750490037</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="- refactor tests">
+      <created>1670758965813</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670758965813</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -150,24 +158,25 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="- add two new tests" />
     <MESSAGE value="- generate new user" />
-    <option name="LAST_COMMIT_MESSAGE" value="- generate new user" />
+    <MESSAGE value="- refactor tests" />
+    <option name="LAST_COMMIT_MESSAGE" value="- refactor tests" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserControllerTests.java</url>
-          <line>8</line>
+          <line>12</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserControllerTests.java</url>
-          <line>11</line>
+          <line>15</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/UserControllerTests.java</url>
-          <line>16</line>
+          <line>20</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
