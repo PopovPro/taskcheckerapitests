@@ -1,4 +1,5 @@
 import io.restassured.RestAssured;
+import io.restassured.http.Cookies;
 
 import java.io.IOException;
 import java.util.Properties;
@@ -14,5 +15,16 @@ public class ApiTestBase {
         } catch (IOException e){
             throw new RuntimeException(e);
         }
+    }
+
+    protected static Cookies getAuthCookies() {
+        return RestAssured
+            .given()
+                .contentType("application/x-www-form-urlencoded")
+                .formParam("username", "Rx8TMYPgz@ZUzb")
+                .formParam("password", "64MX9j?csngTQv")
+            .when()
+                .post("/login")
+                .getDetailedCookies();
     }
 }
