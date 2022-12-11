@@ -40,4 +40,17 @@ public class UserControllerTests extends ApiTestBase {
         var user = new Gson().fromJson(jsonSting, UserInfo.class);
         Assert.assertEquals(user.uid, userUid);
     }
+
+    @Test
+    public void getUserInfo_checkPropertiesForUserWhoStartedTheTest() throws Exception {
+        String userUid = UserApi.createUser();
+        UserApi.postStart(userUid);
+        UserApi.getUserInfo(userUid)
+                .then().log().all()
+                .assertThat().body("$", hasKey("name"))
+                .assertThat().body("$", hasKey("uid"))
+                .assertThat().body("$", hasKey("startTime"))
+                .assertThat().body("$", hasKey("endTime"))
+                .assertThat().body("$", hasKey("isStarted"));
+    }
 }

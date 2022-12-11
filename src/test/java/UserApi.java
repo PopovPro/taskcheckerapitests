@@ -50,4 +50,11 @@ public class UserApi extends ApiTestBase {
         }
         return newUserId.toString();
     }
+
+    public static Response postStart(String uid) {
+        return given()
+                .pathParam("uid", uid)
+                .when()
+                .post("/api/public/user/start/{uid}");
+    }
 }
