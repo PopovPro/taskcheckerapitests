@@ -15,9 +15,15 @@ import java.util.UUID;
 import static io.restassured.RestAssured.given;
 
 public class UserApi extends ApiTestBase {
-    public static Response getUserInfo(String o) {
+    static Response getUserTimeResponse(String uid) {
         return given()
-                .pathParam("uid", o)
+                .pathParam("uid", uid)
+                .when()
+                .get("/api/public/user/time/{uid}");
+    }
+    public static Response getUserInfo(String uid) {
+        return given()
+                .pathParam("uid", uid)
                 .when()
                 .get("/api/public/user/info/{uid}");
     }

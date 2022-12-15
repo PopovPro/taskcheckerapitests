@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2420079f-c5e9-4960-941a-a774a9a5d698" name="Changes" comment="- serialization">
+      <change afterPath="$PROJECT_DIR$/src/test/java/UserTimeTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/UserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserApi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserControllerTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,16 +35,31 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Notification.DisplayName-DoNotAsk-Download Shared Index": "Shared indexes available",
+    "Notification.DoNotAsk-Download Shared Index": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "/Users/igorpopov/Testing/taskcheckerapitests"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.UserControllerTests.getUserInfo_checkPropertiesForUserWhoStartedTheTest">
-    <configuration name="UserControllerTests" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TaskCheckerDemo" />
+  <component name="RunManager" selected="TestNG.UserTimeTests">
+    <configuration name="UserControllerTests.getUserInfo_returnCorrrectUid" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="taskcheckerapitests" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="UserControllerTests" />
+      <option name="METHOD_NAME" value="getUserInfo_returnCorrrectUid" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserTimeTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="taskcheckerapitests" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="UserTimeTests" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -52,11 +67,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTests.getUserInfo_checkBodyHasNameAndUid" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TaskCheckerDemo" />
+    <configuration name="UserTimeTests.getUserTime_checkStatusCodeAndMessage_ForUserHasntStartedTheTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="taskcheckerapitests" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserControllerTests" />
-      <option name="METHOD_NAME" value="getUserInfo_checkBodyHasNameAndUid" />
+      <option name="MAIN_CLASS_NAME" value="UserTimeTests" />
+      <option name="METHOD_NAME" value="getUserTime_checkStatusCodeAndMessage_ForUserHasntStartedTheTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -64,11 +79,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTests.getUserInfo_checkPropertiesForUserWhoStartedTheTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TaskCheckerDemo" />
+    <configuration name="UserTimeTests.getUserTime_checkStatusCodeAndProperties_1ForUserWhoStartedTheTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="taskcheckerapitests" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserControllerTests" />
-      <option name="METHOD_NAME" value="getUserInfo_checkPropertiesForUserWhoStartedTheTest" />
+      <option name="MAIN_CLASS_NAME" value="UserTimeTests" />
+      <option name="METHOD_NAME" value="getUserTime_checkStatusCodeAndProperties_1ForUserWhoStartedTheTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -76,23 +91,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserControllerTests.getUserInfo_returnCorrectUid_expect200" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TaskCheckerDemo" />
+    <configuration name="UserTimeTests.getUserTime_checkStatusCodeAndProperties_ForUserWhoStartedTheTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="taskcheckerapitests" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserControllerTests" />
-      <option name="METHOD_NAME" value="getUserInfo_returnCorrectUid_expect200" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserControllerTests.getUserInfo_returnCorrrectUid_" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="TaskCheckerDemo" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserControllerTests" />
-      <option name="METHOD_NAME" value="getUserInfo_returnCorrrectUid_" />
+      <option name="MAIN_CLASS_NAME" value="UserTimeTests" />
+      <option name="METHOD_NAME" value="getUserTime_checkStatusCodeAndProperties_ForUserWhoStartedTheTest" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -102,11 +105,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.UserControllerTests.getUserInfo_checkPropertiesForUserWhoStartedTheTest" />
-        <item itemvalue="TestNG.UserControllerTests.getUserInfo_returnCorrrectUid_" />
-        <item itemvalue="TestNG.UserControllerTests.getUserInfo_returnCorrectUid_expect200" />
-        <item itemvalue="TestNG.UserControllerTests" />
-        <item itemvalue="TestNG.UserControllerTests.getUserInfo_checkBodyHasNameAndUid" />
+        <item itemvalue="TestNG.UserTimeTests" />
+        <item itemvalue="TestNG.UserTimeTests.getUserTime_checkStatusCodeAndProperties_1ForUserWhoStartedTheTest" />
+        <item itemvalue="TestNG.UserTimeTests.getUserTime_checkStatusCodeAndProperties_ForUserWhoStartedTheTest" />
+        <item itemvalue="TestNG.UserTimeTests.getUserTime_checkStatusCodeAndMessage_ForUserHasntStartedTheTest" />
+        <item itemvalue="TestNG.UserControllerTests.getUserInfo_returnCorrrectUid" />
       </list>
     </recent_temporary>
   </component>
@@ -167,26 +170,5 @@
     <MESSAGE value="- refactor tests" />
     <MESSAGE value="- serialization" />
     <option name="LAST_COMMIT_MESSAGE" value="- serialization" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/UserControllerTests.java</url>
-          <line>12</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/UserControllerTests.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/UserControllerTests.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
