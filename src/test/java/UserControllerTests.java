@@ -34,7 +34,7 @@ public class UserControllerTests extends ApiTestBase {
     }
 
     @Test
-    public void getUserInfo_returnCorrrectUid() throws Exception {
+    public void getUserInfo_returnCorrectUid() throws Exception {
         String userUid = UserApi.createUser();
         var jsonSting = UserApi.getUserInfo(userUid).getBody().asString();
         var user = new Gson().fromJson(jsonSting, UserInfo.class);

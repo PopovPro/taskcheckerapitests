@@ -6,7 +6,7 @@ import static org.hamcrest.Matchers.*;
 public class UserTimeTests extends UserApi {
     @Test
     public void getUserTime_checkStatusCodeAndMessage_ForUserHasntStartedTheTest() throws Exception {
-        String userUid = UserApi.createUser();
+        String userUid = createUser();
         getUserTimeResponse(userUid)
             .then()
                 .assertThat().statusCode(404)
@@ -14,7 +14,7 @@ public class UserTimeTests extends UserApi {
     }
     @Test
     public void getUserTime_checkStatusCodeAndProperties_ForUserWhoStartedTheTest() throws Exception {
-        String userUid = UserApi.createUser();
+        String userUid = createUser();
         postStart(userUid);
         getUserTimeResponse(userUid)
             .then()
@@ -24,7 +24,7 @@ public class UserTimeTests extends UserApi {
     }
     @Test
     public void getUserTime_checkStatusCodeAndProperties_1ForUserWhoStartedTheTest() throws Exception {
-        String userUid = UserApi.createUser();
+        String userUid = createUser();
         postStart(userUid);
         getUserTimeResponse(userUid)
             .then()

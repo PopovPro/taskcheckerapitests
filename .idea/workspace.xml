@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2420079f-c5e9-4960-941a-a774a9a5d698" name="Changes" comment="- serialization">
-      <change afterPath="$PROJECT_DIR$/src/test/java/UserTimeTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UserApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserControllerTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserControllerTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserTimeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserTimeTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,29 +33,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Notification.DisplayName-DoNotAsk-Download Shared Index": "Shared indexes available",
-    "Notification.DoNotAsk-Download Shared Index": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "/Users/igorpopov/Testing/taskcheckerapitests"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Notification.DisplayName-DoNotAsk-Download Shared Index&quot;: &quot;Shared indexes available&quot;,
+    &quot;Notification.DoNotAsk-Download Shared Index&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/igorpopov/Testing/taskcheckerapitests&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="TestNG.UserTimeTests">
-    <configuration name="UserControllerTests.getUserInfo_returnCorrrectUid" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="taskcheckerapitests" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserControllerTests" />
-      <option name="METHOD_NAME" value="getUserInfo_returnCorrrectUid" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}</component>
+  <component name="RunManager" selected="TestNG.testClass.getUserInfo_checkStatusCodeAndMessage_withIncorrectId2">
     <configuration name="UserTimeTests" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="taskcheckerapitests" />
       <option name="PACKAGE_NAME" value="" />
@@ -79,11 +67,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTimeTests.getUserTime_checkStatusCodeAndProperties_1ForUserWhoStartedTheTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testClass" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="taskcheckerapitests" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserTimeTests" />
-      <option name="METHOD_NAME" value="getUserTime_checkStatusCodeAndProperties_1ForUserWhoStartedTheTest" />
+      <option name="MAIN_CLASS_NAME" value="testClass" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testClass.getUserInfo_checkStatusCodeAndMessage_withIncorrectId" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="taskcheckerapitests" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="testClass" />
+      <option name="METHOD_NAME" value="getUserInfo_checkStatusCodeAndMessage_withIncorrectId" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -91,11 +90,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserTimeTests.getUserTime_checkStatusCodeAndProperties_ForUserWhoStartedTheTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="testClass.getUserInfo_checkStatusCodeAndMessage_withIncorrectId2" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="taskcheckerapitests" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserTimeTests" />
-      <option name="METHOD_NAME" value="getUserTime_checkStatusCodeAndProperties_ForUserWhoStartedTheTest" />
+      <option name="MAIN_CLASS_NAME" value="testClass" />
+      <option name="METHOD_NAME" value="getUserInfo_checkStatusCodeAndMessage_withIncorrectId2" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -105,11 +104,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.UserTimeTests" />
-        <item itemvalue="TestNG.UserTimeTests.getUserTime_checkStatusCodeAndProperties_1ForUserWhoStartedTheTest" />
-        <item itemvalue="TestNG.UserTimeTests.getUserTime_checkStatusCodeAndProperties_ForUserWhoStartedTheTest" />
+        <item itemvalue="TestNG.testClass.getUserInfo_checkStatusCodeAndMessage_withIncorrectId2" />
         <item itemvalue="TestNG.UserTimeTests.getUserTime_checkStatusCodeAndMessage_ForUserHasntStartedTheTest" />
-        <item itemvalue="TestNG.UserControllerTests.getUserInfo_returnCorrrectUid" />
+        <item itemvalue="TestNG.testClass.getUserInfo_checkStatusCodeAndMessage_withIncorrectId" />
+        <item itemvalue="TestNG.UserTimeTests" />
       </list>
     </recent_temporary>
   </component>
@@ -150,7 +148,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670765495317</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="- serialization">
+      <created>1671125276512</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671125276512</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
